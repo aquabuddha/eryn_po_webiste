@@ -1,0 +1,112 @@
+/*General*/
+
+body {
+    width: 100%;
+    background: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.main-nav {
+    background: #ffffff;
+    box-shadow: 0px 3px 5px #000000;
+    padding-left: 0px;
+    text-transform: uppercase;
+}
+
+
+/* Layout Styles ------------------ */
+
+.main-nav li {
+    text-align: center;
+    display: block;
+    padding: 3px;
+
+}
+
+.main-nav a {
+    padding: 0px 50px 0px 50px;
+    border: red solid 1px;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+    color: #686666;
+}
+
+header {
+    text-align: center;
+}
+
+.sub-header{
+    margin-top: -10px;
+    font-size: 10px;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 40px;
+    font-family: 'Voltaire', sans-serif;
+    letter-spacing: -1px;
+}
+
+h2 {
+
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.main-nav,
+h2 {
+    color: #2b2b2b;
+}
+
+p {
+    margin-top: 5px;
+}
+
+div {
+    border: solid red 1px;
+}
+
+.sub-header {
+    color: #8b8a8a;
+    text-transform: uppercase;
+    font-size: 9px;
+    padding-top: 1px;
+}
+
+
+/* Pictures */
+#pic3 {
+    max-width: 100%;
+}
+
+#photo2 {
+    float: left;
+    padding-right: 5px;
+}
+
+#photo3 {
+    float: right;
+}
+
+figure {
+    margin: 0px;
+}
+
+figcaption {
+    font-size: 10px;
+    text-align: right;
+}
+
+/* Combiners */
+
+li > a {
+    color: #2b2b2b;
+    text-decoration: none;
+}
