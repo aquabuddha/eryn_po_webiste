@@ -4,7 +4,8 @@ body {
     width: 100%;
     background: #ffffff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    color: #919191;
+    line-height: 1.6;
 }
 
 .main-nav {
@@ -21,18 +22,18 @@ body {
     text-align: center;
     display: block;
     padding: 3px;
-
 }
 
 .main-nav a {
     padding: 0px 50px 0px 50px;
-    border: red solid 1px;
+    /* border: red solid 1px; */
+    color: #2b2b2b;
+    text-decoration: none;
 }
 
 .wrapper {
     width: 90%;
     margin: auto;
-    color: #686666;
 }
 
 header {
@@ -50,6 +51,8 @@ h1 {
     font-size: 40px;
     font-family: 'Voltaire', sans-serif;
     letter-spacing: -1px;
+    color: #3A3939;
+    font-weight: 100;
 }
 
 h2 {
@@ -58,6 +61,11 @@ h2 {
     font-size: 20px;
     margin-bottom: 0px;
     margin-top: 15px;
+}
+
+h3 {
+    color: #FFA07A;
+    font-size: 15px;
 }
 
 .main-nav,
@@ -69,26 +77,46 @@ p {
     margin-top: 5px;
 }
 
-div {
-    border: solid red 1px;
-}
-
 .sub-header {
-    color: #8b8a8a;
+    color: #c7c7c7;
     text-transform: uppercase;
     font-size: 9px;
     padding-top: 1px;
 }
 
+hr {
+    display: block;
+    height: 10px;
+    width: 225px;
+    border: 0px;
+    border-top: 1px solid rgb(56, 56, 56);
+    margin: 0;
+}
+
+.hrLong {
+    display: block;
+    height: 10px;
+    width: 100%;
+    border: 0px;
+    border-top: 1px solid rgb(56, 56, 56);
+    margin: 0;
+}
 
 /* Pictures */
+#pic1,
 #pic3 {
     max-width: 100%;
+}
+
+#photo1 {
+    float: right;
+    padding-top; 0px;
 }
 
 #photo2 {
     float: left;
     padding-right: 5px;
+    margin-top: 3px;
 }
 
 #photo3 {
@@ -104,9 +132,76 @@ figcaption {
     text-align: right;
 }
 
-/* Combiners */
+/* Media Queries */
 
-li > a {
-    color: #2b2b2b;
-    text-decoration: none;
+@media (min-width: 769px) {
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* div {
+        border: solid red 1px;
+    } */
+
+    h1 {
+        margin-top: 15px;
+        margin-bottom: 6px;
+        font-size: 80px;
+        font-family: 'Voltaire', sans-serif;
+        letter-spacing: -1px;
+        
+    }
+
+    .sub-header{
+        margin-top: -10px;
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .main-nav li {
+        text-align: center;
+        display: inline-block;
+        font-size: 12px;
+        width: 12%;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .main-nav a {
+        padding: 45px 0px;
+        display: block;
+    }
+
+    /* Float Clearfix */
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+}
+
+@media (min-width: 1250px) {
+    .wrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 120px;
+    }
+
+    .welcome {
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+
+    .sub-header{
+        margin-top: -20px;
+        font-size: 14px;
+        font-weight: 100;
+    }
 }
