@@ -1,3 +1,10 @@
+/* Float Clearfix */
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
 /*General*/
 
 body {
@@ -41,7 +48,7 @@ header {
 }
 
 .sub-header{
-    margin-top: -10px;
+    margin-top: -20px;
     font-size: 10px;
 }
 
@@ -132,6 +139,8 @@ figcaption {
     text-align: right;
 }
 
+
+
 /* Media Queries */
 
 @media (min-width: 769px) {
@@ -148,22 +157,25 @@ figcaption {
     h1 {
         margin-top: 15px;
         margin-bottom: 6px;
-        font-size: 80px;
+        font-size: 90px;
         font-family: 'Voltaire', sans-serif;
         letter-spacing: -1px;
-        
+    }
+
+    h2 {
+        margin-top: 5px;
     }
 
     .sub-header{
-        margin-top: -10px;
         font-size: 14px;
         letter-spacing: 3px;
+        margin-top: -30px;
     }
 
     .main-nav li {
         text-align: center;
         display: inline-block;
-        font-size: 12px;
+        font-size: 14px;
         width: 12%;
         padding: 0px;
         margin: 0px;
@@ -174,11 +186,16 @@ figcaption {
         display: block;
     }
 
-    /* Float Clearfix */
-    .clearfix::after {
-        content: " ";
-        display: table;
-        clear: both;
+    #photo1 {
+        padding-left: 10px;
+    }
+
+    #photo3 {
+        padding-top: 5px;
+    }
+
+    #welcome {
+        padding-bottom: 20px;
     }
 
 }
@@ -189,19 +206,45 @@ figcaption {
         margin: 0 auto;
     }
 
+    .main-nav li {
+        font-size: 14px;
+    }
+
     h1 {
         font-size: 120px;
+    }
+
+    h2 {
+        margin-top: 0px;
     }
 
     .welcome {
         width: 90%;
         margin: 0 auto;
-        
     }
 
-    .sub-header{
-        margin-top: -20px;
-        font-size: 14px;
+    .sub-header {
+        margin-top: -50px;
+        font-size: 16px;
         font-weight: 100;
+    }
+
+    .left {
+        float: left;
+        width: 47%;
+        margin-right: 3%;
+    }
+
+    /* .bottom {
+        float: left;
+        width: 33%;
+    }
+     */
+    #photo3 {
+        float: none;
+    }
+
+    .pic3 {
+        vertical-align: middle;
     }
 }
