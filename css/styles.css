@@ -150,6 +150,8 @@ figcaption {
         margin: 0 auto;
     }
 
+
+
     /* div {
         border: solid red 1px;
     } */
@@ -231,6 +233,27 @@ figcaption {
         margin-right: 15px;
     }
 
+    /* Sticky Nav */
+    header,
+    .main-nav-scrolled {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    body {
+        padding-top: 250px;
+    }
+
+    .main-nav,
+    .wrapper {
+        position: relative;
+    }
+
+    .main-nav {
+        z-index: 250;
+        
+    }
 
 /* Page Styles */
     .wrapper {
@@ -247,7 +270,7 @@ figcaption {
     }
 
     h1 {
-        font-size: 120px;
+        font-size: 130px;
     }
 
     h2 {
@@ -267,23 +290,4 @@ figcaption {
        margin-left: 15px;
     }
 
-    /* .pic3 {
-        vertical-align: middle;
-    } */
-    /* .left {
-        float: left;
-        width: 47%;
-        margin-right: 3%;
-    }
-
-    .bottom {
-        float: left;
-        width: 33%;
-    }
-   
-    #photo3 {
-        float: none;
-    }
-
- */
 }
