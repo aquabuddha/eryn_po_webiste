@@ -190,22 +190,58 @@ figcaption {
         padding-left: 10px;
     }
 
+    #photo2 {
+        margin-right: 15px;
+    }
+
     #photo3 {
         padding-top: 5px;
+        margin-left: 15px;
     }
 
     #welcome {
-        padding-bottom: 20px;
+        padding-bottom: 0px;
+        margin-top: 25px;
     }
 
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1025px) {
+
+/* Flexbox Styles */
+    .row1,
+    .row2 {
+        display: flex;
+    }
+
+    .row1,
+    .row2 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .reviews {
+        order: 2;
+    }
+    #photo3 {
+        order: 1;
+        width: 100%; 
+        max-width: 345px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+/* Page Styles */
     .wrapper {
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
     }
 
+    #welcome {
+        width: 80%;
+        margin: 0 auto;
+    }
     .main-nav li {
         font-size: 14px;
     }
@@ -218,33 +254,36 @@ figcaption {
         margin-top: 0px;
     }
 
-    .welcome {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     .sub-header {
         margin-top: -50px;
         font-size: 16px;
         font-weight: 100;
     }
 
-    .left {
+   .music {
+       margin-right: 15px;
+   }
+   .photography {
+       margin-left: 15px;
+    }
+
+    /* .pic3 {
+        vertical-align: middle;
+    } */
+    /* .left {
         float: left;
         width: 47%;
         margin-right: 3%;
     }
 
-    /* .bottom {
+    .bottom {
         float: left;
         width: 33%;
     }
-     */
+   
     #photo3 {
         float: none;
     }
 
-    .pic3 {
-        vertical-align: middle;
-    }
+ */
 }
