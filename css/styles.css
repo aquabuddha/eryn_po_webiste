@@ -148,7 +148,9 @@ figcaption {
         margin: 0 auto;
     }
 
-
+    header {
+        margin-top: 0px;
+    }
 
     /* div {
         border: solid red 1px;
@@ -237,6 +239,16 @@ figcaption {
         position: relative;
     }    
     
+    .wrapper {
+        padding: 180px;
+        z-index: 10;
+        background: white;
+    }
+
+    .main-nav {
+        margin-bottom: -112px;
+    }
+
     header,
     .main-nav-scrolled {
         position: fixed;
@@ -245,7 +257,7 @@ figcaption {
     }
 
     body {
-        padding-top: 250px;
+        padding-top: 225px;
     }
 
     .main-nav {
@@ -256,6 +268,10 @@ figcaption {
     .wrapper {
         width: 70%;
         margin: 0 auto;
+    }
+
+    ul {
+        margin-top: 0;
     }
 
     #welcome {
