@@ -8,3 +8,5 @@ $(window).scroll(function() {
         mn.removeClass("main.nav.scrolled");
     } 
 });
+
+alert("I work!");
