@@ -232,6 +232,11 @@ figcaption {
     }
 
     /* Sticky Nav */
+    .main-nav,
+    .wrapper {
+        position: relative;
+    }    
+    
     header,
     .main-nav-scrolled {
         position: fixed;
@@ -243,14 +248,8 @@ figcaption {
         padding-top: 250px;
     }
 
-    .main-nav,
-    .wrapper {
-        position: relative;
-    }
-
     .main-nav {
         z-index: 250;
-        
     }
 
 /* Page Styles */
