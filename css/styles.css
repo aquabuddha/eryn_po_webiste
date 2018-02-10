@@ -38,6 +38,10 @@ body {
     text-decoration: none;
 }
 
+#welcome span {
+    font-size: 25px;
+}
+
 .wrapper {
     width: 90%;
     margin: auto;
@@ -96,7 +100,7 @@ hr {
     height: 10px;
     width: 225px;
     border: 0px;
-    border-top: 1px solid rgb(56, 56, 56);
+    border-top: 1px solid rgb(165, 165, 165);
     margin: 0;
 }
 
@@ -213,7 +217,8 @@ figcaption {
 /* Flexbox Styles */
     .row1,
     .row2 {
-        display: flex;
+        display:flex;   
+        width: 100%;
     }
 
     .row1,
@@ -266,7 +271,7 @@ figcaption {
 
 /* Page Styles */
     .wrapper {
-        width: 70%;
+        width: 60%;
         margin: 0 auto;
     }
 
