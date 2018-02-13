@@ -203,6 +203,7 @@ figcaption {
     #photo3 {
         padding-top: 5px;
         margin-left: 15px;
+        margin-right: 15px;
     }
 
     #welcome {
@@ -217,28 +218,40 @@ figcaption {
 /* Flexbox Styles */
     .row1,
     .row2 {
-        display:flex;   
+        display: flex;   
         width: 100%;
+        flex-direction: row;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
     }
 
-    .row1,
-    .row2 {
-        flex-direction: row;
-        justify-content: space-between;
+    .music,
+    .photography,
+    .reviews,
+    .experience,
+    #photo3 {
+        flex: 1;
     }
 
     .reviews {
         order: 2;
     }
+
     #photo3 {
         order: 1;
         width: 100%; 
         max-width: 345px;
-        margin-left: 15px;
-        margin-right: 15px;
+        /* margin-left: 15px;
+        margin-right: 15px; */
     }
 
-    /* Sticky Nav */
+/* Sticky Nav */
     .main-nav,
     .wrapper {
         position: relative;
