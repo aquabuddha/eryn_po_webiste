@@ -1,3 +1,4 @@
+
 var mn = $(".main-nav");
 
 
@@ -20,4 +21,5 @@ $(window).scroll(function() {
         mn.removeClass("main-nav-scrolled");
     } 
 });
+
 
