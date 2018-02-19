@@ -24,7 +24,7 @@ body {
 
 /* --------------Layout Styles ------------------ */
 
-/* Test for mobile nav stuff */
+/* -------------Mobile Navigation styles------------- */
 .sidenav {
     height: 100%;
     width: 0;
@@ -34,9 +34,12 @@ body {
     left: 0;
     background-color: #FFF;
     overflow-x: hidden;
-    transition: 0.5s;
     padding-top: 60px;
     text-align:center;
+}
+
+.slide {
+    transition: 0.5s;
 }
 
 .sidenav .closebtn {
