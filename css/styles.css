@@ -17,7 +17,6 @@ body {
 
 .main-nav {
     background: #ffffff;
-    box-shadow: 0px 3px 5px #4d4d4d;
     padding-left: 0px;
     text-transform: uppercase;
 }
@@ -30,10 +29,10 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #FFF;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -43,17 +42,19 @@ body {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    left: 90%;
+    font-size: 25px;
+    margin-left: 0px;
+    text-decoration: none;
+    text-decoration-color: #3A3939;
 }
 
 .menu {
     position: absolute;
     top: 0;
+    cursor: pointer;
 }
 /* Test END */
-
 
 .main-nav li {
     text-align: center;
@@ -177,6 +178,8 @@ figcaption {
 
 @media (min-width: 769px) {
 
+
+
     /* --------------Sticky Nav-------------- */
     .main-nav,
     .wrapper {
@@ -191,8 +194,13 @@ figcaption {
     .main-nav {
         margin-bottom: -112px;
         margin-top: 0px;
+        box-shadow: 0px 3px 5px #4d4d4d;
     }
 
+    .non-mobile {
+        width: 100%;
+        position: relative;
+    }
 
     header,
     .main-nav-scrolled {
@@ -207,6 +215,7 @@ figcaption {
 
     .main-nav {
         z-index: 250;
+        width: 100%;
     }
     /* --------------End Sticky-------------- */
 
@@ -252,6 +261,7 @@ figcaption {
         padding: 40px 0px;
         display: block;
     }
+
     .menu,
     .closebtn {
         display: none;
@@ -316,41 +326,12 @@ figcaption {
         margin-right: 15px; */
     }
 
-/* Sticky Nav */
-    .main-nav,
-    .wrapper {
-        position: relative;
-    }    
-    
-    .wrapper {
-        padding: 180px;
-        z-index: 10;
-        background: white;
-    }
-
-    .main-nav {
-        margin-bottom: -112px;
-    }
-
-    header,
-    .main-nav-scrolled {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-
-    body {
-        padding-top: 225px;
-    }
-
-    .main-nav {
-        z-index: 250;
-    }
 
 /* Page Styles */
     .wrapper {
         width: 60%;
         margin: 0 auto;
+        padding: 180px; /*for sticky nav*/
     }
 
     ul {
