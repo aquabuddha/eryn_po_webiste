@@ -22,7 +22,7 @@ body {
 }
 
 
-/* --------------Layout Styles ------------------ */
+/* ------------------Layout Styles ------------------ */
 
 /* -------------Mobile Navigation styles------------- */
 .sidenav {
@@ -44,19 +44,25 @@ body {
 
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
+    top: 0.1em;
     left: 90%;
-    font-size: 25px;
+    font-size: 45px;
     margin-left: 0px;
     text-decoration: none;
-    text-decoration-color: #3A3939;
+    color: #3A3939;
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
+    font-size: 20px;
+    float: left;
+    width: 100%;
     top: 0;
     cursor: pointer;
+    background-color: #FFF;
 }
+
+
 /* Test END */
 
 .main-nav li {
@@ -82,6 +88,7 @@ body {
 
 header {
     text-align: center;
+    padding-top: 20px;
 }
 
 .sub-header{
@@ -230,6 +237,7 @@ figcaption {
 
     header {
         margin-top: 0px;
+        padding-top: 0px;
     }
 
     h1 {

@@ -26,10 +26,9 @@ $(document).ready(function() {
             mobile.width("0%");
             mobile.addClass("sidenav");
         }
-        //If window's width is less than 440px, then remove .sidenav class from mobile-nav ID
+        //If window's width is less than 440px, then remove .sidenav and .slide classes from mobile-nav ID
         else {
-            mobile.removeClass("sidenav");
-            mobile.removeClass("slide");
+            mobile.removeClass("sidenav slide");
             mobile.width("100%");
         }
     };
@@ -39,7 +38,7 @@ $(document).ready(function() {
     
     //Check width on resize
     $window.resize(checkWidth);
-    });
+});
     
 
 // JQuery Sticky Nav for non-mobile
