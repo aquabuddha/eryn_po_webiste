@@ -23,7 +23,7 @@
         <h1>Eryn Price-Ormsby</h1>
         <h3 class="sub-header">Photographer | Model | Musician | Costume-Maker</h3>
     </header>
-    
+        
     <div id="mobile-nav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ul class="main-nav" type="none">
@@ -53,7 +53,7 @@
             <p>From the time  I could walk I have been immersed in the world of art. With each year I make it my mission to learn more about not only performing and creating it, but the theory behind all of it. Knowing every facet of what gives it power allows me to fill each work, whether musical or visual, with rich intention. This is my passion and something I take great pride in; I would love to share it with you. </p>
             <p>Feel free to check out the variety of pages to see the services I offer. If you have an idea that is not mentioned on this site, feel free to send a message and see if I am interested! </p>
         </div>
-        <div class="row1">
+        <div id="row1">
             <div class="music">
                 <h2>Music</h2>
                 <hr/>
@@ -74,7 +74,7 @@
                 <p>I pride myself in getting very unique images, whether from head shots or family pictures. I make sure to get a few standard shots, but capturing the ethereal is a passion of mine and I love to bring it out in anyone with whom I work.</p>
             </div>
         </div>
-        <div class="row2">
+        <div id="row2">
             <div id="photo3">
                 <figure>
                     <img src="img/eryn3.jpg" alt="Color picture of Eryn sitting in nature." id="pic3" class="clearfix">
@@ -115,12 +115,85 @@
                 <h3>Kassi Williams</h3>
                 <p>"Whether you're doing a fantasy shoot, showing off some new looks, or simply wanting to capture a moment, Eryn is always a pleasure to work with. As a personal friend, I've had the fortune of working with her many times, and she always manages to bring out beauty in all that she shoots (especially since she's great at remembering what angles and features you feel most comfortable with- it's saved me countless amounts of pride)! She's fun, laid back- without lacking professionalism, of course, and has a way with giving direction that always results in the perfect shot!"</p>
                 <hr/ class= "hrLong">
-            
-                <!-- Facebook link -->
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FErynPOPhotography%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width=100% height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" class="facebook"></iframe>
             </div>
         </div>
-    </div>
+        <div id="row3">
+            <div class="lightbox">
+                 <!-- Images used to open the lightbox -->
+                <div class="row">
+                        <div class="column">
+                        <img src="img\Elle-2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow thumb">
+                        </div>
+                        <div class="column">
+                        <img src="img\Elle-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow thumb">
+                        </div>
+                        <div class="column">
+                        <img src="img\Elle-2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow thumb">
+                        </div>
+                        <div class="column">
+                        <img src="img\Elle-2.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow thumb">
+                        </div>
+                    </div>
+                    
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="img\Elle-2.jpg" style="width:75%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="img\Elle-2.jpg" style="width:75%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="img\Elle-2.jpg" style="width:75%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="img\Elle-2.jpg" style="width:75%">
+                        </div>
+                    
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+                    
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                            <img class="demo thumb" src="img\Elle-2.jpg" onclick="currentSlide(1)" alt="Nature">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo thumb" src="img\Elle-2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo thumb" src="img\Elle-2.jpg" onclick="currentSlide(3)" alt="Mountains">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo thumb" src="img\Elle-2.jpg" onclick="currentSlide(4)" alt="Lights">
+                        </div>
+                        </div>
+                    </div> 
+                            </div>    
+                            <div class="facebook">
+                                <!-- Facebook link -->
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FErynPOPhotography%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width=100% height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" align="right"></iframe>
+                            </div>
+                        </div>
+                    </div>
 
 <footer>
     <h4>&#169 Copyright Eryn Price-Ormsby</h4>
