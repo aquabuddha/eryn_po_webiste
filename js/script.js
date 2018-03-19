@@ -58,13 +58,13 @@ $window.scroll(function() {
 // Open the Modal
 function openModal() {
   document.getElementById('myModal').style.display = "block";
-  document.getElementsByClassName('main-nav').style.display = "hide";
+  document.getElementById('navId').style.display = "block";
 }
 
 // Close the Modal
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
-  document.getElementsByClassName('main-nav').style.display = "block";
+  document.getElementById('navId').style.display = "block";
 }
 
 var slideIndex = 1;
