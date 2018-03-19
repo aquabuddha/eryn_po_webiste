@@ -1,21 +1,23 @@
-// Variable declorations
+// --------Variable declorations--------
 var mn = $(".main-nav");
 var $window = $(window);
 var mobile = $("#mobile-nav");
 
 
-// Open mobile nav
+
+// --------Open Mobile Nav--------
 function openNav() {
     document.getElementById("mobile-nav").style.width = "100%";
     //adds slide effect when opened
     document.getElementById("mobile-nav").classList.add("slide");
 }
 
-// Close mobile nav
+// --------Close Mobile Nav--------
 function closeNav() {
     document.getElementById("mobile-nav").style.width = "0%";
 }
 
+// --------Check window width for Mobile Nav--------
 // need to wait for document to finish loading before implimenting
 $(document).ready(function() {
     // JQuery for Mobile Nav
@@ -41,7 +43,7 @@ $(document).ready(function() {
 });
     
 
-// JQuery Sticky Nav for non-mobile
+// -----JQuery Sticky Nav for non-mobile--------
 $window.scroll(function() {
     //if window is scrolled 225px, then add class to main-nav
     if( $(this).scrollTop() > 225 ) {
@@ -53,4 +55,46 @@ $window.scroll(function() {
     } 
 });
 
+// Lightbox code
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+  document.getElementById('navId').style.display = "none";
+}
 
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+  document.getElementById('navId').style.display = "block";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
