@@ -8,11 +8,9 @@ I actually have quite a bit, so I guess I'm just going to pick three and list th
 
 .main-nav - set the text to uppercase, all padding to 0px, and the background to white.
 
-#welcome - centers the welcome div and sets the width to take up 75% of the wrapper div.
+.sub-header - sets the font size to 10px and and applies a negative margin
 
-#photo2 - floats the pic to the left and adds right padding and top margin
-
-
+.wrapper - sets the width to 70% of the parent, adds padding to account for the header for the sticky navigation menu, and then centers it with the margin.
 
 Custom JavaScript
 openNav() - Sets the width of the menu navigation to 100% when the Menu item is clicked and adds the "slide" class to mobile-nav in order to provide the transition effect.
