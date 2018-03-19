@@ -26,7 +26,7 @@
         
     <div id="mobile-nav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <ul class="main-nav" type="none">
+        <ul class="main-nav" id="navId" type="none">
             <li><a href="#">Home</a></li>
             <li><a href="#">Modelling</a></li>
             <li><a href="#">Self-Portraits</a></li>
@@ -125,13 +125,13 @@
                         <img src="img\Elle-2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow thumb">
                         </div>
                         <div class="column">
-                        <img src="img\Elle-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow thumb">
+                        <img src="img\Dance-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow thumb">
                         </div>
                         <div class="column">
-                        <img src="img\Elle-2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow thumb">
+                        <img src="img\Killarney.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow thumb">
                         </div>
                         <div class="column">
-                        <img src="img\Elle-2.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow thumb">
+                        <img src="img\Autumn Faerie-1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow thumb">
                         </div>
                     </div>
                     
@@ -142,22 +142,22 @@
                     
                         <div class="mySlides">
                             <div class="numbertext">1 / 4</div>
-                            <img src="img\Elle-2.jpg" style="width:75%">
+                            <img src="img\Elle-2.jpg" class="slideImg">
                         </div>
                     
                         <div class="mySlides">
                             <div class="numbertext">2 / 4</div>
-                            <img src="img\Elle-2.jpg" style="width:75%">
+                            <img src="img\Dance-2.jpg" class="slideImg">
                         </div>
                     
                         <div class="mySlides">
                             <div class="numbertext">3 / 4</div>
-                            <img src="img\Elle-2.jpg" style="width:75%">
+                            <img src="img\Killarney.jpg" class="slideImg">
                         </div>
                     
                         <div class="mySlides">
                             <div class="numbertext">4 / 4</div>
-                            <img src="img\Elle-2.jpg" style="width:75%">
+                            <img src="img\Autumn Faerie-1.jpg" class="slideImg">
                         </div>
                     
                         <!-- Next/previous controls -->
@@ -170,20 +170,22 @@
                         </div>
                     
                         <!-- Thumbnail image controls -->
-                        <div class="column">
-                            <img class="demo thumb" src="img\Elle-2.jpg" onclick="currentSlide(1)" alt="Nature">
-                        </div>
-                    
-                        <div class="column">
-                            <img class="demo thumb" src="img\Elle-2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
-                        </div>
-                    
-                        <div class="column">
-                            <img class="demo thumb" src="img\Elle-2.jpg" onclick="currentSlide(3)" alt="Mountains">
-                        </div>
-                    
-                        <div class="column">
-                            <img class="demo thumb" src="img\Elle-2.jpg" onclick="currentSlide(4)" alt="Lights">
+                        <div class="row">
+                            <div class="column">
+                                <img class="demo thumb lightThumb" src="img\Elle-2.jpg" onclick="currentSlide(1)" alt="Fairy">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo thumb lightThumb" src="img\Dance-2.jpg" onclick="currentSlide(2)" alt="Dance">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo thumb lightThumb" src="img\Killarney.jpg" onclick="currentSlide(3)" alt="Meadow">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo thumb lightThumb" src="img\Autumn Faerie-1.jpg" onclick="currentSlide(4)" alt="Autum Fairy">
+                            </div>
                         </div>
                         </div>
                     </div> 

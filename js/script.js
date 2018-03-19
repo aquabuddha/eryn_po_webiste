@@ -4,6 +4,7 @@ var $window = $(window);
 var mobile = $("#mobile-nav");
 
 
+
 // --------Open Mobile Nav--------
 function openNav() {
     document.getElementById("mobile-nav").style.width = "100%";
@@ -58,7 +59,7 @@ $window.scroll(function() {
 // Open the Modal
 function openModal() {
   document.getElementById('myModal').style.display = "block";
-  document.getElementById('navId').style.display = "block";
+  document.getElementById('navId').style.display = "none";
 }
 
 // Close the Modal
